@@ -13,7 +13,7 @@ public class RaceCarRunner {
 		// 4. If the car is damaged. Bring it in for a pit stop.
 		if(rC.isDamaged()) {rC.pit();}
 		// 5. Help the car move into first place.
-		for (int i = 0; i < rC.getPositionInRace(); i++) {
+		for (int i = 1; i < rC.getPositionInRace();) {
 			rC.overtake();
 		}
 	}
